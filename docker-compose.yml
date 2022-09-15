@@ -1,0 +1,22 @@
+version: '3.10'
+
+services:
+  app:
+    build:
+      context: .
+    environment:
+      - DB_HOST=db
+      - DB_NAME=ads_db
+      - DB_USER=ads
+      - DB_PASSWORD=qwerty11
+    depends_on:
+      - db
+
+  db:
+    image: postgres:10-alpine
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_DB=ads_db
+      - POSTGRES_USER=ads
+      - POSTGRES_PASSWORD=qwerty11
