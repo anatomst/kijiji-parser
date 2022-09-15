@@ -21,7 +21,7 @@ export DB_PASSWORD=<db_password>
 python main.py
 
 "Second method:"
-"Add .env file in pycharm run configuration as EnvFile, rename DB_HOST, DB_NAME, DB_USER, DB_PASSWORD and run"
+"Create .env file in pycharm with DB_HOST, DB_NAME, DB_USER, DB_PASSWORD, run configuration as EnvFile and run app"
 ```
 
 ## You can run it using Docker
